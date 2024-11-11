@@ -65,7 +65,7 @@
 
 
 
-        <main class="mt-10 max-w-[968px] text-white">
+        <main class="mt-10 max-w-[1200px] text-white mx-auto">
             {{ $slot }}
         </main>
     </div>

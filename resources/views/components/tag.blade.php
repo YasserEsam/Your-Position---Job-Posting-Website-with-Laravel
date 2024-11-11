@@ -1,0 +1,1 @@
+<a class="px-3 py-2 text-xs font-medium text-gray-200 bg-white/10 rounded-full hover:bg-white/20 transition-colors" href="#">{{ $slot }}</a>

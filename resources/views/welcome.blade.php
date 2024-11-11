@@ -1,21 +1,65 @@
 <x-layout>
-    <section>
-        <h2 class="mb-4 text-xl">Tob Jobs</h2>
-        <article class="mb-6 p-6 rounded-lg bg-white/5 border border-white/10 shadow-lg flex flex-col items-center transition-transform transform hover:scale-105">
-            <h3 class="text-2xl self-start mb-3 font-semibold text-white/90">Laracast</h3>
+    <div class="space-y-10">
+        <section>
 
-            <p class="mb-2 text-lg font-semibold text-gray-300">Video Programming</p>
-            <p class="mb-6 text-gray-400">Full Time - From $10,000</p>
-
-            <div class="flex justify-between items-center mt-auto w-full">
-                <div class="flex space-x-2">
-                    <a class="px-3 py-1 text-xs font-medium text-gray-200 bg-white/10 rounded-full hover:bg-white/20 transition-colors" href="#">Tag</a>
-                    <a class="px-3 py-1 text-xs font-medium text-gray-200 bg-white/10 rounded-full hover:bg-white/20 transition-colors" href="#">Tag</a>
-                    <a class="px-3 py-1 text-xs font-medium text-gray-200 bg-white/10 rounded-full hover:bg-white/20 transition-colors" href="#">Tag</a>
-                </div>
-                <img src="https://via.placeholder.com/60" alt="Company Logo" class="w-12 h-12 rounded-full border border-white/20 shadow-md">
+            <x-section-heading>Top Jobs</x-section-heading>
+            <div class="grid lg:grid-cols-3 gap-6 w-full mt-6">
+                <x-job-card />
+                <x-job-card />
+                <x-job-card />
             </div>
-        </article>
 
-    </section>
+        </section>
+
+        <section>
+
+            <x-section-heading>Tags</x-section-heading>
+            <div class="mt-6 flex gap-3 flex-wrap">
+                <x-tag>PHP</x-tag>
+                <x-tag>JavaScript</x-tag>
+                <x-tag>Vue</x-tag>
+                <x-tag>React</x-tag>
+                <x-tag>Angular</x-tag>
+                <x-tag>Node</x-tag>
+                <x-tag>Dotnet</x-tag>
+                <x-tag>Flutter</x-tag>
+                <x-tag>Swift</x-tag>
+                <x-tag>PHP</x-tag>
+                <x-tag>JavaScript</x-tag>
+                <x-tag>Vue</x-tag>
+                <x-tag>React</x-tag>
+                <x-tag>Angular</x-tag>
+                <x-tag>Node</x-tag>
+                <x-tag>Dotnet</x-tag>
+                <x-tag>Flutter</x-tag>
+                <x-tag>Swift</x-tag>
+                <x-tag>PHP</x-tag>
+                <x-tag>JavaScript</x-tag>
+                <x-tag>Vue</x-tag>
+                <x-tag>React</x-tag>
+                <x-tag>Angular</x-tag>
+                <x-tag>Node</x-tag>
+                <x-tag>Dotnet</x-tag>
+                <x-tag>Flutter</x-tag>
+                <x-tag>Swift</x-tag>
+                <x-tag>PHP</x-tag>
+                <x-tag>JavaScript</x-tag>
+                <x-tag>Vue</x-tag>
+                <x-tag>React</x-tag>
+                <x-tag>Angular</x-tag>
+                <x-tag>Node</x-tag>
+                <x-tag>Dotnet</x-tag>
+                <x-tag>Flutter</x-tag>
+                <x-tag>Swift</x-tag>
+            </div>
+
+        </section>
+
+        <section>
+
+            <x-section-heading>Recent Jobs</x-section-heading>
+          
+
+        </section>
+    </div>
 </x-layout>
