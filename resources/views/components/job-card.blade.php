@@ -6,10 +6,10 @@
 
     <div class="flex justify-between items-center mt-auto w-full">
         <div class="flex space-x-2">
-            <x-tag>PHP</x-tag>
-            <x-tag>JavaScript</x-tag>
-            <x-tag>Vue</x-tag>
+            <x-tag size="sm">PHP</x-tag>
+            <x-tag size="sm">JavaScript</x-tag>
+            <x-tag size="sm">Vue</x-tag>
         </div>
-        <img src="https://via.placeholder.com/60" alt="Company Logo" class="w-12 h-12 rounded-xl border border-white/20 shadow-md">
+        <x-image width="42" />
     </div>
 </article>

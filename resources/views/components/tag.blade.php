@@ -1,1 +1,17 @@
-<a class="px-3 py-2 text-xs font-medium text-gray-200 bg-white/10 rounded-full hover:bg-white/20 transition-colors" href="#">{{ $slot }}</a>
+@props(['size' => 'base'])
+
+@php
+    $classes = 'px-3 py-2 font-medium text-gray-200 bg-white/10 rounded-full hover:bg-white/20 transition-colors';
+
+    if ($size === 'base') {
+        $classes .= ' text-sm';
+    }
+
+    if ($size === 'sm') {
+        $classes .= ' text-[10px]';
+    }
+
+
+@endphp
+
+<a class="{{ $classes }}" href="#">{{ $slot }}</a>
