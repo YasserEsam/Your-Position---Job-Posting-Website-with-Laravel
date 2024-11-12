@@ -31,8 +31,8 @@
 
 1. Clone the repository.
    ```bash
-   git clone https://github.com/yourusername/yourposition.git
-   cd yourposition
+   git clone https://github.com/YasserEsam/Your-Position---Job-Posting-Website-with-Laravel.git
+   cd Your-Position---Job-Posting-Website-with-Laravel
 
 
 2. Install dependencies.
