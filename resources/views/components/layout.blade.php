@@ -34,10 +34,21 @@
 
                 <div id="menu-button" class="hidden lg:block">
                 @auth
-                <a href="/jobs/create" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">
+                <div class="flex gap-2">
+                   <a href="/jobs/create" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">
                     Post a Job
                 </a>
 
+                <form action="/logout" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">
+                        Logout
+                    </button>
+                </form>
+ 
+                </div>
+                
                 @endauth
                 
                 @guest
@@ -60,6 +71,13 @@
                 <a href="/jobs/create" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">
                     Post a Job
                 </a>
+
+                <form action="/logout" method="POST">
+                    @csrf
+                    <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">
+                        Logout
+                    </button>
+                </form>
 
                 @endauth
                 

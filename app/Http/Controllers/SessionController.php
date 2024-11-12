@@ -30,4 +30,11 @@ class SessionController extends Controller
 
         return redirect('/');
     }
+
+    public function destroy(){
+        FacadesAuth::logout();
+        request()->session()->invalidate();
+        request()->session()->regenerateToken();
+        return redirect('/');
+    }
 }

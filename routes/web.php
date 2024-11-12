@@ -9,6 +9,12 @@ use App\Http\Controllers\SessionController;
 use App\Http\Controllers\TagController;
 
 Route::get('/', [JobController::class, 'index']);
+
+
+Route::get('/jobs/create', [JobController::class, 'create'])->middleware('auth');
+Route::post('/jobs/create' , [JobController::class, 'store'])->middleware('auth');
+
+
 Route::get('/search' , SearchController::class);
 Route::get('/tags/{tag:name}', TagController::class);
 

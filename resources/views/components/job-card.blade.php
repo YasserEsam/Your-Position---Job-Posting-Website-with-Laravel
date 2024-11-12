@@ -12,6 +12,6 @@
                 <x-tag :$tag size="sm" />
            @endforeach
         </div>
-        <x-image width="42" />
+        <x-image width="42" :employer="$job->employer"/>
     </div>
 </article>
