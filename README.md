@@ -1,6 +1,5 @@
 # Your Position - Job Posting Website
 
-[LIVE VERSION LINK](LIVE_LINK)
 
 ![Your Position - Homepage](./resources/images/screen.png)
 
