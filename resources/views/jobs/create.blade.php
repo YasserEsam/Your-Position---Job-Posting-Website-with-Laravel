@@ -6,9 +6,9 @@
         <x-forms.input name="location" label="Location" placeholder="City, State" />
 
         <x-forms.select name="schedule" label="Schedule">
-            <option value="Full Time">Full Time</option>
-            <option value="Part Time">Part Time</option>
-            <option value="Contract">Contract</option>
+            <option value="Full Time" class="text-black">Full Time</option>
+            <option value="Part Time" class="text-black">Part Time</option>
+            <option value="Contract" class="text-black">Contract</option>
         </x-forms.select>
 
         <x-forms.input name="url" label="Job Link" placeholder="https://" />

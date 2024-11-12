@@ -13,10 +13,13 @@
 
             <x-section-heading>Featured Jobs</x-section-heading>
             <div class="grid lg:grid-cols-3 gap-6 w-full mt-6">
-                @foreach ($featuredJobs as $job )
-                    <x-job-card :$job />
-                @endforeach
-                
+                @if(!empty($featuredJobs) && $featuredJobs->isNotEmpty())
+                    @foreach ($featuredJobs as $job)
+                        <x-job-card :$job />
+                    @endforeach
+                @else
+                    <p class=" text-gray-500">No featured jobs available.</p>
+                @endif
             </div>
 
         </section>
@@ -25,9 +28,13 @@
 
             <x-section-heading>Tags</x-section-heading>
             <div class="mt-6 flex gap-3 flex-wrap">
-                @foreach ($tags as $tag)
-                    <x-tag :$tag />
-                @endforeach
+                @if(!empty($tags) && $tags->isNotEmpty())
+                    @foreach ($tags as $tag)
+                        <x-tag :$tag />
+                    @endforeach
+                @else
+                    <p class=" text-gray-500">No tags available.</p>
+                @endif
             </div>
 
         </section>
@@ -35,9 +42,16 @@
         <section>
 
             <x-section-heading>Recent Jobs</x-section-heading>
-                @foreach ($jobs as $job )
-                    <x-job-card-wide :$job />
-                @endforeach
-            </section>
+            <div class="mt-6">
+                @if(!empty($jobs) && $jobs->isNotEmpty())
+                    @foreach ($jobs as $job)
+                        <x-job-card-wide :$job />
+                    @endforeach
+                @else
+                    <p class=" text-gray-500">No recent jobs available.</p>
+                @endif
+            </div>
+        </section>
+        
     </div>
 </x-layout>
